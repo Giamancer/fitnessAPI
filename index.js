@@ -51,6 +51,11 @@ mongoose.connect(process.env.MONGODB_STRING);
 
 mongoose.connection.once('open', () => console.log("Now connected to MongoDB Atlas."));
 
+// [NEW] Root Route
+app.get("/", (req, res) => {
+    res.send("Welcome to Gia's Fitness API for S83");
+});
+
 //[SECTION] Backend Routes 
 app.use("/api/users", userRoutes);
 app.use("/api/workouts", workoutRoutes);

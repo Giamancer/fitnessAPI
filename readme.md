@@ -41,4 +41,4 @@ Fitness API
 }
 
 ### Hosting
-- 
+- https://fitness-app-api-xcpx.onrender.com/
